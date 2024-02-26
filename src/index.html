@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="scoreboard">
+      <span>
+        Player
+        <br />
+        <span class="score player">0</span>
+      </span>
+      <span>
+        CPU
+        <br />
+        <span class="score cpu">0</span>
+      </span>
+    </div>
+    <div class="table">
+      <div class="table-side player">
+        <div class="deck">
+          <img src="./cards/Back-Blue.svg" class="card" />
+          <span>Cards: <span id="player-deck-count"></span></span>
+        </div>
+        <div class="pile"></div>
+      </div>
+      <div class="table-side cpu">
+        <div class="deck">
+          <img src="./cards/Back-Red.svg" class="card" />
+          <span>Cards: <span id="cpu-deck-count"></span></span>
+        </div>
+        <div class="pile"></div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="button" id="draw-button">Draw Cards</button>
+    </div>
+  </body>
+</html>
